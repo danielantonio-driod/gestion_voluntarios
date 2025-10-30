@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Detalle del Voluntario{% endblock %}
+
+{% block content %}
+    <div class="card">
+        <div class="card-header">
+            <h1>{{ voluntario.nombre }}</h1>
+        </div>
+        <div class="card-body">
+            <p><strong>Email:</strong> {{ voluntario.email }}</p>
+            <p><strong>Teléfono:</strong> {{ voluntario.telefono }}</p>
+            <p><strong>Fecha de Registro:</strong> {{ voluntario.fecha_registro }}</p>
+        </div>
+        <div class="card-footer">
+            <a href="{% url 'voluntario_list' %}" class="btn btn-secondary">Volver a la lista</a>
+        </div>
+    </div>
+{% endblock %}

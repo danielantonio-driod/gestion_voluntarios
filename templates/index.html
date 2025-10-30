@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Bienvenido{% endblock %}
+
+{% block content %}
+    <div class="jumbotron">
+        <h1 class="display-4">Bienvenido a la Plataforma de Gestión de Voluntarios</h1>
+        <p class="lead">Aquí puedes gestionar voluntarios y eventos de una manera fácil y rápida.</p>
+        <hr class="my-4">
+        <p>Utiliza los siguientes enlaces para navegar por la aplicación.</p>
+        <a class="btn btn-primary btn-lg" href="{% url 'voluntario_list' %}" role="button">Ver Voluntarios</a>
+        <a class="btn btn-secondary btn-lg" href="{% url 'evento_list' %}" role="button">Ver Eventos</a>
+    </div>
+{% endblock %}
